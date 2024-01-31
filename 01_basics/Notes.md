@@ -12,7 +12,7 @@ A *literal* represents a specific value directly, while an identifier is a name 
   
     * object literals ({ key: value }), and 
   
-    * array literals ([1, 2, 3])*.
+    * array literals ([1, 2, 3]).
 
 
 * Literals are concrete values.
@@ -55,12 +55,14 @@ Example:
         var accountPassword = "123456"
 
 
-P.S. :  we should use only const and let instead of var because of the issue of scoping (block scope and functional scope)  
+P.S. :  we should use only const and let instead of var because of the issue of scoping (block scope(let) and functional scope(var))  
 *e.g.* It is possible that in a project a developer uses *var accountPassword* in one file and another developer use the same *var accountPassword* in another file then it will change the value everywhere it is used.
 
 
+
+
 # Data-types
-Data types are use to describe the 
+Data types are use to describe the type of data a variable will hold.
 
  Data types:  
 1.  Primitive data types:[used by STACK memory allocation]
@@ -97,6 +99,43 @@ Non-Primitive Data-type (Object)
         console.log(obj2.name);  // Output: Doe
 
 
+# Symbol
+ 
+ Symbols are immutable(cannot be changed) and are unique.
 
+        for creating a Symbol we use Symbol() function
 
+Syntax :       
 
+        const x = Symbol()
+        typeof x;               // symbol
+
+        // two symbols with the same description
+
+        const value1 = Symbol('hello');
+        const value2 = Symbol('hello');
+
+        console.log(value1 === value2); // false
+       
+       
+        // Though value1 and value2 both contain the same description, they are different.
+
+ * accessing the description of a symbol using .(dot) operator.
+
+        console.log(value1.description)         // 'hello'
+        
+        
+ * You can add symbols as a key in an object using square brackets []. For example,
+
+            let id = Symbol("id");
+
+            let person = {
+                name: "Jack",
+
+                // adding symbol as a key
+                [id]: 123 // not "id": 123
+            };
+
+            console.log(person);                             // {name: "Jack", Symbol(id): 123}
+            console.log(person[id].description)         // error because "description" is not used in object
+            console.log(person[id])                               // 123
