@@ -1,4 +1,4 @@
-// Primitive types
+// Primitive types [Stack memory] -> immuttable
 // 7 types: String, Number, Boolean, null, undefined, Symbol, BigInt
 
 
@@ -19,7 +19,7 @@ const bigNumber = 32559843543213654n        // bigint type
 
 
 
-// Non-Primitive types(Reference)
+// Non-Primitive types(Reference)[Heap memory]
 // Array, Objects, Functions
 
 
@@ -49,3 +49,19 @@ console.log("type of bigNumber ->",typeof bigNumber)            // bigint
 console.log("type of heroes ->",typeof heroes)                // object
 console.log("type of myObj ->",typeof myObj)                  // object
 console.log("type of myFunction ->",typeof myFunction)        // function (function object)
+
+// Primitive Data-type (Numbers) [immutable]    
+
+    let a = 5;
+    let b = a;  // b gets a copy of the value of a
+    a = 10;     // Changing the value of a does not affect b
+    console.log(a);  // Output: 10
+    console.log(b);  // Output: 5
+
+// Non-Primitive Data-type (Object) [mutabale]
+
+        var obj1 = { name: "John" };
+        var obj2 = obj1;         // obj2 references the same object in memory
+        obj1.name = "Doe";       // Changing the object's property via obj1 affects obj2
+        console.log(obj1.name);  // Output: Doe
+        console.log(obj2.name);  // Output: Doe
