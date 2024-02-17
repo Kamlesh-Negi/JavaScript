@@ -34,3 +34,5 @@ The String object is used to represent and manipulate a sequence of characters.
     name[1]         //gives value "a"
     ```
     
+    ![String Operations](StringOperation_1.jpg)
+    ![String Operations](StringOperation_2.jpg)
