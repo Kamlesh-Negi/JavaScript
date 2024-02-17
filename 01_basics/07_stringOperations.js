@@ -4,12 +4,12 @@ console.log(playerName.charCodeAt(7))         // returns the Unicode of the char
 console.log(playerName.indexOf("T"))           // find the index of T => 14
 
 const newString = playerName.substring(3,10)     //returns the substring from index 3 to index 10-1(=9)
-console.log(newString)      // "hin Ram"
+console.log("subString:",newString)      // "hin Ram"            // substring takes negative integer as 0
 
 //console.log(newString.substr(3,10))
 
-const anotherString = playerName.slice(-10,9)       // slice
-console.log(anotherString)
+const anotherString = playerName.slice(-16,19)       // slice -> slice can have negative integer which starts from the last index
+console.log("slicing: ",anotherString)                  // Ramesh Tendu
 
 const playerTwo = "    Sunil Chetri   "
 console.log(playerTwo.trim())               // removes trailing whitespaces
