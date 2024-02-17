@@ -50,7 +50,7 @@ console.log("type of heroes ->",typeof heroes)                // object
 console.log("type of myObj ->",typeof myObj)                  // object
 console.log("type of myFunction ->",typeof myFunction)        // function (function object)
 
-// Primitive Data-type (Numbers) [immutable]    
+// Primitive Data-type (Numbers) [immutable]   (in Stack) 
 
     let a = 5;
     let b = a;  // b gets a copy of the value of a
@@ -58,7 +58,18 @@ console.log("type of myFunction ->",typeof myFunction)        // function (funct
     console.log(a);  // Output: 10
     console.log(b);  // Output: 5
 
-// Non-Primitive Data-type (Object) [mutabale]
+    // String
+    let myYoutubename = "KamleshNegidotcom";
+    let anotherName = myYoutubename;
+    console.log("anotherName: ",anotherName);
+    anotherName = "Kamlesh";
+    
+    console.log("myYoutubename: ",myYoutubename);
+    console.log("anotherName: ",anotherName);
+
+
+
+// Non-Primitive Data-type (Object) [mutabale] (in Heap)
 
         var obj1 = { name: "John" };
         var obj2 = obj1;         // obj2 references the same object in memory
