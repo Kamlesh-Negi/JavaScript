@@ -31,3 +31,12 @@ const arraySlice = myArray.slice(1,3)
 O/P: [1,2,3]
      myArray = [0,4,5]
 ```
+**3. push ()**:
+* The push() method is used to add one or more elements to the end of an array.
+* It modifies the original array by adding the specified elements as individual elements, not as a new array.
+* If you push an array as an element using push(), it becomes a single element in the target array.
+
+**4. concat()**:
+* The concat() method is used to concatenate arrays or values and create a new array. 
+* It does not modify the original arrays; instead, it returns a new array that contains elements from the original arrays.
+* If an array is passed as an argument to concat(), its elements are added individually to the new array.

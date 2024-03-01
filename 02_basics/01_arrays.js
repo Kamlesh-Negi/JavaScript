@@ -36,3 +36,16 @@ console.log(fruits); // Output: ["mango", "apple", "pear", "banana", "grape"]
 // Removing the first element
 fruits.shift();
 console.log(fruits); // Output: ["apple", "pear", "banana", "grape"]
+
+
+//push() Vs concat()
+
+const marvel_heroes = ["Thor","Ironman","Spiderman"]
+const dc_heroes = ["Superman","Flash","Batman"]
+ marvel_heroes.push(dc_heroes);
+
+console.log(marvel_heroes)      // ['Thor', 'Ironman', 'Spiderman', [ 'Superman', 'Flash', 'Batman' ]]
+
+//concat()
+const allHeroes = marvel_heroes.concat(dc_heroes)
+console.log("concat allHeroes",marvel_heroes)
