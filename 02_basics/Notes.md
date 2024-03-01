@@ -43,3 +43,15 @@ O/P: [1,2,3]
 
 **5. spread()**:
 * It is a now preferable to use this spread(...) method than concat because we can only give one value in concat but in spread we can add many values just by putting three dots(...) and the value(i.e., array name)
+
+**6. flat()**:
+* The flat() method is used to flatten nested arrays in JavaScript. It returns a new array with all the elements of the original array recursively flattened to a specified depth.
+
+     ```
+     const nestedArray = [1, [2, 3], [4, [5, 6]]];
+     const flattenedArray = nestedArray.flat();
+
+     console.log(flattenedArray);
+     // Output: [1, 2, 3, 4, [5, 6]]
+
+     ```
