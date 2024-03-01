@@ -40,3 +40,6 @@ O/P: [1,2,3]
 * The concat() method is used to concatenate arrays or values and create a new array. 
 * It does not modify the original arrays; instead, it returns a new array that contains elements from the original arrays.
 * If an array is passed as an argument to concat(), its elements are added individually to the new array.
+
+**5. spread()**:
+* It is a now preferable to use this spread(...) method than concat because we can only give one value in concat but in spread we can add many values just by putting three dots(...) and the value(i.e., array name)

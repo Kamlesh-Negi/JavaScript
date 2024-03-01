@@ -49,3 +49,11 @@ console.log(marvel_heroes)      // ['Thor', 'Ironman', 'Spiderman', [ 'Superman'
 //concat()
 const allHeroes = marvel_heroes.concat(dc_heroes)
 console.log("concat allHeroes",marvel_heroes)
+
+// spread()
+
+const marvel_characters = ["Thor", "Ironman", "Spiderman"];
+const dc_characters = ["Superman", "Flash", "Batman"];
+
+const all_new_Heroes = [...marvel_characters, ...dc_characters]
+console.log(all_new_Heroes)         // [ 'Thor', 'Ironman', 'Spiderman', 'Superman', 'Flash', 'Batman' ]
