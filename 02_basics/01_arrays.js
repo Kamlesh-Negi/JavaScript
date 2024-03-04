@@ -80,3 +80,9 @@ console.log(Array.isArray("Kamlesh"));      // false
 
 //  2. To convert into array
 console.log(Array.from("Kamlesh"))         // ['K', 'a', 'm', 'l', 'e', 's', 'h']
+
+// of()
+let score1 = 100;
+let score2 = 300;
+let score3 = 500;
+console.log(Array.of(score1,score2,score3))     // returns a new array from a set of elements -> [100,300,500]
