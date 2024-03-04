@@ -34,3 +34,9 @@ console.log("2. jsUserTwo full name: ",jsUserTwo["full name"])    // we should a
 console.log("before changing jsUser email:", jsUser.email)
 jsUser.email = "xyz@abc.com"
 console.log("after changing jsUser email:", jsUser.email)
+
+// to lock the object
+
+Object.freeze(jsUser)       // will not allow to modify the object
+jsUser.email = "abc@google.com"
+console.log("after freezing the object, jsUser email:", jsUser.email)           // will not be modified
