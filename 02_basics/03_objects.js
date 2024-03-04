@@ -29,3 +29,8 @@ const jsUserTwo = {
 // console.log("jsUserTwo full name", jsUserTwo."full name")       // will throw an error--> SyntaxError: Unexpected string
 console.log("2. jsUserTwo full name: ",jsUserTwo["full name"])    // we should access like this because it will help us to access the keys of string-type
 
+// to change the value of an object
+
+console.log("before changing jsUser email:", jsUser.email)
+jsUser.email = "xyz@abc.com"
+console.log("after changing jsUser email:", jsUser.email)
