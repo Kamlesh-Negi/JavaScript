@@ -40,3 +40,31 @@ console.log("after changing jsUser email:", jsUser.email)
 Object.freeze(jsUser)       // will not allow to modify the object
 jsUser.email = "abc@google.com"
 console.log("after freezing the object, jsUser email:", jsUser.email)           // will not be modified
+
+// Symbol: Symbols are immutable(cannot be changed) and are unique
+
+const mySym = Symbol("mykey1")
+const JsUser = {
+  name : "Kamlesh",
+  "full name" : "Kamlesh Negi",
+  age : 18,
+  location : "Uttarakhand",
+  emai : "abc@google.com",
+  mySym : "Key1"
+}
+
+console.log("Symbol: ",JsUser.mySym)
+console.log("Type of mySym: ", typeof JsUser.mySym)   // string
+
+// to make this key Symbol type we need to put it in []
+const myNewSym = Symbol("mykey2");
+const JsUserTwo = {
+  name: "Kamlesh",
+  "full name": "Kamlesh Negi",
+  age: 18,
+  location: "Uttarakhand",
+  email: "abc@google.com",
+  [myNewSym]: "Key1",
+};
+console.log(JsUserTwo[myNewSym])    // Key1
+console.log(typeof myNewSym)        // symbol
