@@ -41,3 +41,19 @@ console.log(objFive); // Object.assign is a static method which copies all enume
 
 const objSix = {...objOne, ...objTwo}    // more efficient way is using spread method as we used in array
 console.log(objSix)
+
+// when value is coming from database
+ const users = [
+   {
+     id: 1, // index 0
+     email: "Abc@example.com",
+   },
+   {
+     id: 2, // index 0
+     email: "Xyz@example.com",
+   },
+ ];
+
+//to access the value
+
+console.log(users[1].email)     // where users is array of objects having indicies starting from 0
