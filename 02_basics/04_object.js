@@ -10,6 +10,16 @@ instaUser.isLoggedIn = false;
 
 console.log(instaUser);
 
+console.log("keys:",Object.keys(instaUser))     // getting keys of an object
+
+console.log("values:",Object.values(instaUser)) // getting values of an object
+
+console.log("entries: ",Object.entries(instaUser))  // Returns an array of key/values of the enumerable properties of an object
+
+// checking if the object has the property we are trying to get
+console.log(instaUser.hasOwnProperty('isLoggedIn'))                 // true
+console.log(instaUser.hasOwnProperty('isLoggedOut'))                // false
+
 // Object wihtin object
 
 const regularUser = {
