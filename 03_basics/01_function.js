@@ -34,3 +34,20 @@ function addTwoNos(num1, num2) {
 
 const newResult = addTwoNos(3, 5);
 console.log("NewResult", newResult);
+
+// passing arguments
+
+function loginUserMessage(username){
+    return `${username} just logged in!`
+}
+loginUserMessage("Kamlesh")     // will not show anything b/c it only returns the value, we have to console it to print
+console.log(loginUserMessage("Kamlesh"))        
+console.log(loginUserMessage("Kamlesh"))        // "undefined  just logged in!"--> if we don't pass any argument
+
+function loginUserMsg(username){
+    if(username===undefined){
+        console.log("Please enter a username")
+    }
+    return `${username} just logged in!`;
+}
+console.log(loginUserMsg("Kamlesh Negi"));
