@@ -49,7 +49,7 @@ const JsUser = {
   "full name" : "Kamlesh Negi",
   age : 18,
   location : "Uttarakhand",
-  emai : "abc@google.com",
+  email : "abc@google.com",
   mySym : "Key1"
 }
 
