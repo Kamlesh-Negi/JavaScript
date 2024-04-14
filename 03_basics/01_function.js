@@ -51,3 +51,16 @@ function loginUserMsg(username){
     return `${username} just logged in!`;
 }
 console.log(loginUserMsg("Kamlesh Negi"));
+
+// default pararmeter: if nothing is provided then the default parameter will be used
+function loginUserMsgTwo(username ="Vikas"){
+    if(!username){
+        console.log("Please enter a username")
+        return
+    }
+    return `${username} just logged in !`
+}
+console.log(loginUserMsgTwo())                  // will use the default parameter
+console.log(loginUserMsgTwo("Animesh"))             // will override the default parameter
+
+
