@@ -35,3 +35,41 @@ A JavaScript function is a fundamental building block that allows you to encapsu
     }
     ```
 ##### NOTE : Remember that accessing a function without parentheses (()) refers to the function object itself, while using parentheses invokes the function and returns its result
+
+4. Handling Parameters:
+    
+    * Passing Parameters
+
+    ```
+    function functionName(parameter1, parameter2) {
+        // code block
+    }
+    functionName(argument1, argument2);
+    ```
+5. Handling Arguments:
+
+    * Accessing Arguments inside Function
+    
+    ```
+        function functionName(parameter1, parameter2) {
+        console.log(parameter1, parameter2);
+        }
+        functionName(argument1, argument2);
+    ```     
+
+##### Difference between Parameter and Argument
+
+![alt text](Parameters-Vs-Arguments.jpg)
+
+example: 
+
+```
+        function greet(name) {
+    console.log("Hello, " + name);
+}
+    greet("John");
+
+// "name" is a parameter of the greet function.
+
+// "John" is an argument passed to the greet function 
+```
