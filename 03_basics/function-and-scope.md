@@ -73,3 +73,34 @@ example:
 
 // "John" is an argument passed to the greet function 
 ```
+
+### SCOPE :
+* Using ***var, let, const*** 
+
+    #### Scope:
+    
+    * *var* is function-scoped, meaning it is visible throughtout the function in which it is declared.
+    
+    * *let* and *const* are block-scoped, meaning they are only visible within the block(enclosed by curly braces{}) in which they are declared.
+
+   #### Reassignment :
+
+    * *var* and *let* can be reassigned to new values but *const* cannot be.
+
+    #### Hoisting :
+
+    * *var* declarations are hoisted to the top of their enclosing function or global scope, meanting they are available before their actual declaration.
+
+    * *let* and *const* declarations are hoisted to the top of their enclosing block scope, bu they are not initialized until the actual declaration is evaluated. Accessing them before results in a ReferenceError.
+    #### Temporal Dead Zone: 
+    * *var* has no temporal dead zone.
+    
+    * *let* and *const* have a temporal dead zone, meaning accessing them before the declaration will result in a ReferenceError.
+
+    #### Redeclaration :
+    * *var* allows redeclaration within the same scope.
+
+    * *let* and *const* do not allow redeclaration within the same scope.
+
+
+        ![alt text](let-const-var.jpg)
