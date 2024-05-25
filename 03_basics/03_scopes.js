@@ -27,3 +27,21 @@ if(true)
 //console.log(x)
 //console.log(y)
 console.log(z)
+
+
+// Example 3:
+
+let p = 300
+if(true){
+    let p = 10;
+}
+console.log("Example 3: p= ",p) // 300 because we are accessing it oustide the block scope
+
+// Example 4:
+
+let q = 300
+if (true) {
+    let q = 10
+    console.log("Inner q ",q)    // 10 inside block scope
+}
+console.log("Outer q", q)       // 300 outside block scope
