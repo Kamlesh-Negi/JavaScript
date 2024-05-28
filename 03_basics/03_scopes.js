@@ -45,3 +45,31 @@ if (true) {
     console.log("Inner q ",q)    // 10 inside block scope
 }
 console.log("Outer q", q)       // 300 outside block scope
+
+/*-------------- Nested Scope--------------------*/
+
+console.log("Nested Scope examples")
+// example 1:
+
+function one(){
+    const username = "Kamlesh"
+    function two(){
+        const website = "Youtube"
+        console.log(username)
+    }
+   //console.log(website)           // ReferenceError: website is not defined because it is inside the function two block and can't be accessed out of its scope
+    two()
+}
+one()
+
+// example 2:
+
+if(true){
+    const username = "Kamlesh"
+    if(username === "Kamlesh"){
+        const website = " Youtube"
+        console.log(username+website)           // Kamlesh Youtube
+    }
+    // console.log(website)             // error: because website is not defined, outside the scope
+}
+// console.log(username)                // error: because username is outside the if-block
