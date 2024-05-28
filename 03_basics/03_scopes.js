@@ -73,3 +73,24 @@ if(true){
     // console.log(website)             // error: because website is not defined, outside the scope
 }
 // console.log(username)                // error: because username is outside the if-block
+
+
+// Some other example: Suppose you have a function and it onnly perform console.log().
+// Syntax 1:
+
+//console.log(addOne(5))            // can be written here also
+function addOne(num){
+    return num + 1
+}
+console.log(addOne(5));
+
+
+// Syntax 2:
+
+// addTwo(5)                           // ReferenceError: Cannot access 'addTwo' before initialization.  Therefore we can't write it here as we have declare a function and hold it in a variable and thus can't be accessed before initialization
+const addTwo = function(num){                   // "Expression"
+    return num + 2
+}
+console.log(addTwo(5))
+
+// It all depends on how we declare a function
