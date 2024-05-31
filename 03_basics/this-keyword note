@@ -1,0 +1,19 @@
+For the file [this-keyword](E:\ReactLearning\react-tut\tailwind\project\Learn_JavaScript\03_basics\this-keyword.js) if we console.log(this) at line no. 6 then the output will be :
+```
+        Kamlesh, Welcome to our website
+        {
+        username: 'Kamlesh',
+        price: 999,
+        welcomeMessage: [Function: welcomeMessage]     
+        }
+        Sam, Welcome to our website
+        {
+        username: 'Sam',
+        price: 999,
+        welcomeMessage: [Function: welcomeMessage]     
+        }
+```
+And if we console.log(this) at line no. 12 ,i.e. outside the scope (global level) then the output will be empty string {}
+    But in browser's console it will show window object like: Window {0: Window, window: Window, self: Window, document: document, name: '', location: Location, …}
+### Why is the Difference?
+ Because earlier JavaScript executed only in browsers, where the JavaScript engine was integrated into the browser and the global context was the window object. Now, with the development of runtime environments like Node.js and Deno, the JavaScript engine (such as V8) is used outside of the browser, providing a different global context and execution environment."   
