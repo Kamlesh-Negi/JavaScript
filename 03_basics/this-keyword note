@@ -1,3 +1,8 @@
+## this Keyword
+Definition:
+* Keyword: this is a keyword in JavaScript used to refer to the object that is currently executing the code.
+* Context-Dependent: The value of this varies depending on how and where the function is called.
+
 For the file [this-keyword](E:\ReactLearning\react-tut\tailwind\project\Learn_JavaScript\03_basics\this-keyword.js) if we console.log(this) at line no. 6 then the output will be :
 ```
         Kamlesh, Welcome to our website
@@ -17,3 +22,110 @@ And if we console.log(this) at line no. 12 ,i.e. outside the scope (global level
     But in browser's console it will show window object like: Window {0: Window, window: Window, self: Window, document: document, name: '', location: Location, …}
 ### Why is the Difference?
  Because earlier JavaScript executed only in browsers, where the JavaScript engine was integrated into the browser and the global context was the window object. Now, with the development of runtime environments like Node.js and Deno, the JavaScript engine (such as V8) is used outside of the browser, providing a different global context and execution environment."   
+
+ ## using 'this' in strict and non-strict mode
+
+Non-strict mode :
+
+        function code(){
+                console.log(this)
+            }
+            code()
+            // Output: global object
+
+Strict mode :
+
+     'use strict';
+             function code(){
+                console.log(this)
+            }
+            code()
+            // Output: undefined
+
+* Browser : `this` inside a standalone function refers to the `window object`.
+
+* Node.js (Non-Strict Mode) : `this` inside a standalone function refers to the `global object`.
+
+* Node.js (Strict Mode) : `this` inside a standalone function is `undefined`. 
+
+
+
+this is a keyword in JavaScript. It is a special identifier that refers to an object, but it is not an object itself. The value of this depends on the context in which a function is called. Here’s a detailed explanation:
+
+
+#### How this Works ?
+* #### Global Context (Non-Strict Mode):
+
+    In the global execution context (outside any function), this refers to the global object (window in browsers, global in Node.js).
+
+        console.log(this); // In a browser, this logs the window object
+
+* #### Global Context (Strict Mode):
+
+    In strict mode, this in the global context is undefined.
+
+        'use strict';
+        console.log(this); // undefined
+
+* #### Function Context (Non-Strict Mode):
+
+    When a function is called as a standalone function, this refers to the global object.
+
+        function myFunction() {
+            console.log(this);
+        }
+        myFunction(); // In a browser, this logs the window object
+
+* #### Function Context (Strict Mode):
+
+    In strict mode, this inside a standalone function is undefined.
+
+        'use strict';
+        function myFunction() {
+            console.log(this);
+        }
+        myFunction(); // undefined
+
+* #### Object Method:
+
+    When a function is called as a method of an object, this refers to the object.
+
+        const myObject = {
+            myMethod: function() {
+                console.log(this);
+            }
+        };
+        myObject.myMethod(); // Logs myObject
+
+* #### Constructor Function:
+
+    When a function is used as a constructor (called with the new keyword), this refers to the newly created instance.
+
+        function MyConstructor() {
+            this.property = 'value';
+            console.log(this);
+        }
+        const instance = new MyConstructor(); // Logs the new instance
+
+ * #### Arrow Functions:
+
+    Arrow functions do not have their own this context. Instead, this is lexically inherited from the outer function where the arrow function is defined.
+
+        const myObject = {
+            myMethod: function() {
+                const arrowFunction = () => {
+                    console.log(this);
+                };
+                arrowFunction();
+            }
+        };
+        myObject.myMethod(); // Logs myObject
+
+ #### Summary :
+    
+* this is a keyword, not an object.
+* The value of this depends on the execution context:
+* Global context: window (browser) or global (Node.js).
+* Object method: The object itself.
+* Constructor function: The newly created instance.
+* Arrow function: Lexically inherited from the surrounding context.
