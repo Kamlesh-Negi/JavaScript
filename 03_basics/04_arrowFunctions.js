@@ -21,7 +21,7 @@ console.log(add2number(33,36))
 const add = (num1, num2) => {username : "Kamlesh"}
 console.log(add(45,54))
 
-
+// do this
 const add2num = (num1, num2) => ({
   sum: num1 + num2,
   username: "Kamlesh",
