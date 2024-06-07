@@ -16,13 +16,14 @@ console.log(addTwoAgain(33, 36));
 const add2number = (num1, num2) =>  (num1 + num2)
 console.log(add2number(33,36))
 
-// the example below shows the use of paranthesis (). We write code as in example 3 if we want to return an object
+// the example below shows the use of paranthesis (). We write code as in example 2 if we want to return an object
 
 const add = (num1, num2) => {username : "Kamlesh"}
 console.log(add(45,54))
 
 
 const add2num = (num1, num2) => ({
+  sum: num1 + num2,
   username: "Kamlesh",
 });
 console.log(add2num(45, 54));
