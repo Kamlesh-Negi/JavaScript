@@ -43,3 +43,55 @@ You can pass parameters to an IIFE to make it more flexible.
     })('Kamlesh');
 
     // Output - `Hello, Kamlesh!`
+
+### Real World Examples :
+#### 1. DOM Manipulation on Page Load:
+
+        (function() {
+            const element = document.getElementById('myElement');
+            element.style.color = 'red';
+        })();
+
+#### 2. Configuration Setup:
+
+        const appConfig = (function() {
+            const config = {
+                apiKey: '123456',
+                apiUrl: 'https://api.example.com'
+            };
+
+            return {
+                getConfig: function() {
+                    return config;
+                }
+            };
+        })();
+
+        console.log(appConfig.getConfig());
+
+#### 3. Library Creation:
+When creating libraries or frameworks, IIFEs help encapsulate the code and expose only the necessary parts.
+
+        const myLibrary = (function() {
+            function privateFunction() {
+                console.log('This is private');
+            }
+
+            function publicFunction() {
+                console.log('This is public');
+            }
+
+            return {
+                publicFunction: publicFunction
+            };
+        })();
+
+        myLibrary.publicFunction(); // Output: This is public
+        // myLibrary.privateFunction(); // Error: myLibrary.privateFunction is not a function    
+
+### Best Practice :
+To ensure there are no issues regardless of the context in which the IIFE is used, it's best to always prepend the IIFE with a semicolon:
+
+     ;(function() {
+        console.log('IIFE executed safely!');
+    })();    
