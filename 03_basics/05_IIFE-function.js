@@ -45,3 +45,31 @@ console.log(count); // 1
     count++;
     console.log("Script-2",count); // 11
 })();
+
+
+// IIFE with Parameters
+
+ (function (name) {
+   console.log("Hello, " + name + "!");
+ })("Kamlesh");
+
+ // Creating Private Varibles:
+
+ const counterModule = (function(){
+    let counter = 0;
+
+    return {
+        increment : function() {
+            counter++;
+            console.log('Counter:', counter);
+        },
+    reset : function(){
+        counter = 0;
+        console.log('Counter reset to:', counter);
+    }
+    };
+ })();
+ counterModule.increment();
+ counterModule.increment();
+ counterModule.reset();
+console.log(typeof counter)

@@ -7,7 +7,7 @@
 ### Why use an IIFE ?
 **1. Avoid Global Variables:**  
     * In JavaScript, if you create variables in the global scope, they can cause problems because they might conflict with other variables.
-    * An IIFE helps keep your variables private and prevents them from messing with other code.
+    * An IIFE helps keep your variables and functions private and prevents them from messing with other code as they cannot be accessed from outside.
 
  **2. Run Code Immediately:**
     * Sometimes you need to run some code right away. An IIFE lets you do that.   
@@ -33,3 +33,13 @@ Let's say you want to log a message to the console as soon as the page loads:
     }) ();
 
 *when the browser reads this code, it defines the function and runs it immediatelyl, so you see "Page has loaded!" in the console right away.*    
+
+##### Example 2: IIFE with Parameters
+
+You can pass parameters to an IIFE to make it more flexible.
+
+    (function(name) {
+        console.log('Hello, ' + name +'!');
+    })('Kamlesh');
+
+    // Output - `Hello, Kamlesh!`
