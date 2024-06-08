@@ -95,3 +95,13 @@ To ensure there are no issues regardless of the context in which the IIFE is use
      ;(function() {
         console.log('IIFE executed safely!');
     })();    
+
+
+### Summary
+IIFE (Immediately Invoked Function Expression) is a function that runs as soon as it is defined.
+* Purpose: Avoids polluting the global scope, allows for private variables and functions, and is useful for initializing code.  
+* Syntax: Defined as a function expression and immediately invoked.
+* Variants: Can be written using different syntaxes, including traditional functions, arrow functions, and with unary operators.
+* Use Cases: Used for creating modules, avoiding global variable conflicts, and executing code immediately.
+
+By using IIFEs, we can write cleaner, more modular, and more maintainable JavaScript code.
