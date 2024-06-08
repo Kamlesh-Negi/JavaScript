@@ -72,4 +72,41 @@ console.log(count); // 1
  counterModule.increment();
  counterModule.increment();
  counterModule.reset();
-console.log(typeof counter)
+console.log(typeof counter);
+
+// configuration Setup:
+
+const appConfig = (function () {
+  const config = {
+    apiKey: "123456",
+    apiUrl: "https://api.example.com",
+  };
+
+  return {
+    getConfig: function () {
+      return config;
+    },
+  };
+})();
+
+console.log(appConfig.getConfig());
+
+// Library Creation
+
+const myLibrary = (function() {
+    function privateFunction() {
+        console.log('This is private');
+    }
+
+    function publicFunction() {
+        console.log('This is public');
+    }
+
+    return {
+        publicFunction: publicFunction
+    };
+})();
+
+myLibrary.publicFunction(); // Output: This is public
+// myLibrary.privateFunction(); // Error: myLibrary.privateFunction is not a function
+
