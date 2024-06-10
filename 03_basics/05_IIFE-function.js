@@ -59,6 +59,12 @@ console.log(count); // 1
   console.log(`Hello ${name}!`);
 })("Kamlesh"); 
 
+// example 3:
+(function (a, b) {
+  console.log("The sum is:", a + b);
+})(5, 10);
+
+
  // Creating Private Varibles:
 
  const counterModule = (function(){
@@ -116,3 +122,11 @@ const myLibrary = (function() {
 myLibrary.publicFunction(); // Output: This is public
 // myLibrary.privateFunction(); // Error: myLibrary.privateFunction is not a function
 
+// Preventing Global scope Pollution
+(function() {
+    const a = 10;
+    console.log('Inside IIFE:', a); // Output: Inside IIFE: 10
+})();
+
+const a = 20;
+console.log('Outside IIFE:', a); // Output: Outside IIFE: 20
