@@ -44,6 +44,12 @@ You can pass parameters to an IIFE to make it more flexible.
 
     // Output - `Hello, Kamlesh!`
 
+We can pass the parameters and take arguments in an Arrow function in unnamed IIFE.
+
+        ((name) => {
+            console.log(`Hello ${name}!`)
+        })("Kamlesh");    
+
 ### Real World Examples :
 #### 1. DOM Manipulation on Page Load:
 

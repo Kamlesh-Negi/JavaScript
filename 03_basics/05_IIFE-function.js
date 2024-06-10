@@ -49,9 +49,15 @@ console.log(count); // 1
 
 // IIFE with Parameters
 
+//example 1:
  (function (name) {
    console.log("Hello, " + name + "!");
  })("Kamlesh");
+
+ //example 2: unnamed IIFE
+((name) => {
+  console.log(`Hello ${name}!`);
+})("Kamlesh"); 
 
  // Creating Private Varibles:
 
