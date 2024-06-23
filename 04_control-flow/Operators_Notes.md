@@ -77,7 +77,7 @@ These operators compare two values and return a boolean result.
 * Equal (==): Checks if the values of two operands are equal.
 
        console.log(5 == '5'); // true
-       
+
 * Strict Equal (===): Checks if the values and types of two operands are equal.
 
        console.log(5 === '5'); // false
@@ -105,3 +105,18 @@ These operators compare two values and return a boolean result.
 * Less Than or Equal (<=): Checks if the left operand is less than or equal to the right operand.
 
        console.log(5 <= 3); // false       
+
+### 4. Logical Operators
+These operators are used to perform logical operations.
+
+* Logical AND (&&): Returns true if both operands are true.
+
+       console.log(true && false); // false
+
+* Logical OR (||): Returns true if at least one of the operands is true.
+
+       console.log(true || false); // true
+
+* Logical NOT (!): Returns true if the operand is false.
+
+       console.log(!true); // false
