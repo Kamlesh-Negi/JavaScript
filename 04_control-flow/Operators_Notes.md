@@ -70,3 +70,38 @@ These operators assign values to variables.
 
        x %= 5; // x = x % 5
        console.log(x); // 1
+
+### 3. Comparison Operators
+These operators compare two values and return a boolean result.
+
+* Equal (==): Checks if the values of two operands are equal.
+
+       console.log(5 == '5'); // true
+       
+* Strict Equal (===): Checks if the values and types of two operands are equal.
+
+       console.log(5 === '5'); // false
+
+* Not Equal (!=): Checks if the values of two operands are not equal.
+
+       console.log(5 != '5'); // false
+
+* Strict Not Equal (!==): Checks if the values and types of two operands are not equal.
+
+       console.log(5 !== '5'); // true
+
+* Greater Than (>): Checks if the left operand is greater than the right operand.
+
+       console.log(5 > 3); // true
+
+* Less Than (<): Checks if the left operand is less than the right operand.
+
+       console.log(5 < 3); // false
+
+* Greater Than or Equal (>=): Checks if the left operand is greater than or equal to the right operand.
+
+       console.log(5 >= 5); // true
+
+* Less Than or Equal (<=): Checks if the left operand is less than or equal to the right operand.
+
+       console.log(5 <= 3); // false       
