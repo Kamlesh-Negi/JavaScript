@@ -39,3 +39,34 @@
 
           b--;
           console.log(b); // 2
+
+### 2. Assignment Operators
+These operators assign values to variables.  
+
+*  Assignment (=): Assigns the right operand's value to the left operand.
+
+       
+       let x = 10;
+
+* Addition Assignment (+=): Adds the right operand to the left operand and assigns the result to the left operand.
+
+       x += 5; // x = x + 5
+       console.log(x); // 15
+
+* Subtraction Assignment (-=): Subtracts the right operand from the left operand and assigns the result to the left operand.
+
+       x -= 3; // x = x - 3
+       console.log(x); // 12
+
+* Multiplication Assignment (*=): Multiplies the left operand by the right operand and assigns the result to the left operand.
+
+       x *= 2; // x = x * 2
+       console.log(x); // 24
+* Division Assignment (/=): Divides the left operand by the right operand and assigns the result to the left operand.
+
+       x /= 4; // x = x / 4
+       console.log(x); // 6
+* Modulus Assignment (%=): Takes the modulus using the two operands and assigns the result to the left operand.
+
+       x %= 5; // x = x % 5
+       console.log(x); // 1
