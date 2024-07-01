@@ -166,3 +166,25 @@ String operators are used to manipulate strings.
 
        str1 += str2; // str1 = str1 + str2
        console.log(str1); // "Hello World!"
+
+ ### 7. Other Operators
+
+* Conditional (Ternary) Operator (? :): Assigns a value based on a condition.
+
+       let age = 18;
+       let canVote = (age >= 18) ? "Yes" : "No";
+       console.log(canVote); // "Yes"
+
+* Comma Operator (,): Evaluates multiple expressions and returns the value of the last expression.
+
+       let x = (1, 2, 3);
+       console.log(x); // 3
+
+* Typeof Operator (typeof): Returns the type of a variable.
+
+       console.log(typeof "Hello"); // "string"
+
+* Instanceof Operator (instanceof): Checks if an object is an instance of a specific class or constructor.
+
+       let arr = [];
+       console.log(arr instanceof Array); // true      
