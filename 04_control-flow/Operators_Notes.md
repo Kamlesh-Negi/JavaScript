@@ -152,3 +152,17 @@ Bitwise operators perform bitwise operations on operands.
 * Zero-Fill Right Shift (>>>): Shifts bits to the right with zero fill.
 
       console.log(5 >>> 1); // 2 (0101 >>> 1 = 0010)
+
+### 6. String Operators
+String operators are used to manipulate strings.
+
+* Concatenation (+): Concatenates two strings.
+
+       let str1 = "Hello ";
+       let str2 = "World!";
+       console.log(str1 + str2); // "Hello World!"
+
+* Concatenation Assignment (+=): Adds the right operand to the left operand and assigns the result to the left operand.
+
+       str1 += str2; // str1 = str1 + str2
+       console.log(str1); // "Hello World!"
