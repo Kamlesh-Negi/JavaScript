@@ -120,3 +120,35 @@ These operators are used to perform logical operations.
 * Logical NOT (!): Returns true if the operand is false.
 
        console.log(!true); // false
+
+
+### 5. Bitwise Operators
+Bitwise operators perform bitwise operations on operands.
+
+* AND (&): Performs a bitwise AND.
+
+       console.log(5 & 1); // 1 (0101 & 0001 = 0001)
+
+* OR (|): Performs a bitwise OR.
+
+      console.log(5 | 1); // 5 (0101 | 0001 = 0101)
+
+* NOT (~): Performs a bitwise NOT.
+
+      console.log(~5); // -6 (~0101 = 1010 + 1 = 1011, two's complement)
+
+* XOR (^): Performs a bitwise XOR.
+
+      console.log(5 ^ 1); // 4 (0101 ^ 0001 = 0100)
+
+* Left Shift (<<): Shifts bits to the left.
+
+      console.log(5 << 1); // 10 (0101 << 1 = 1010)
+
+* Right Shift (>>): Shifts bits to the right.
+
+      console.log(5 >> 1); // 2 (0101 >> 1 = 0010)
+
+* Zero-Fill Right Shift (>>>): Shifts bits to the right with zero fill.
+
+      console.log(5 >>> 1); // 2 (0101 >>> 1 = 0010)
