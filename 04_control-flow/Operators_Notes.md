@@ -188,3 +188,68 @@ String operators are used to manipulate strings.
 
        let arr = [];
        console.log(arr instanceof Array); // true      
+
+
+**Spread and Rest Operators :**
+The spread operator allows an iterable such as an array or string to be expanded in places where zero or more arguments or elements are expected. The rest operator collects multiple elements and condenses them into a single element.
+
+* Spread (...): Expands an array or object.
+
+
+       let arr1 = [1, 2, 3];
+       let arr2 = [...arr1, 4, 5];
+       console.log(arr2); // [1, 2, 3, 4, 5]
+
+       let obj1 = {a: 1, b: 2};
+       let obj2 = {...obj1, c: 3};
+       console.log(obj2); // {a: 1, b: 2, c: 3}
+
+* Rest (...): Collects all remaining elements into an array.
+
+       function sum(...args) {
+       return args.reduce((acc, val) => acc + val, 0);
+       }
+       console.log(sum(1, 2, 3)); // 6
+
+**Destructuring Assignment :**
+Destructuring assignment allows unpacking values from arrays or properties from objects into distinct variables.
+
+* Array Destructuring
+
+       let arr = [1, 2, 3];
+       let [a, b, c] = arr;
+       console.log(a, b, c); // 1 2 3
+
+* Object Destructuring
+
+       let obj = {name: 'John', age: 30};
+       let {name, age} = obj;
+       console.log(name, age); // "John" 30
+
+**Optional Chaining Operator :**
+The optional chaining operator (?.) allows you to safely access deeply nested properties of an object without having to check if each reference in the chain is valid.
+
+* Optional Chaining (?.)
+
+       let user = {address: {street: '123 Main St'}};
+       console.log(user?.address?.street); // "123 Main St"
+       console.log(user?.address?.city);   // undefined
+
+**Nullish Coalescing Operator :** 
+The nullish coalescing operator (??) provides a way to handle default values. It returns the right-hand operand when the left-hand operand is null or undefined.
+
+* Nullish Coalescing (??)
+
+       let user;
+       console.log(user ?? 'Guest'); // "Guest"
+
+       user = 'John';
+       console.log(user ?? 'Guest'); // "John"
+
+**Grouping Operator:** The grouping operator (()) controls the precedence of evaluation in expressions.
+       
+* Grouping (())
+
+              let a = 1, b = 2, c = 3;
+              console.log(a + b * c);  // 7
+              console.log((a + b) * c); // 9       
